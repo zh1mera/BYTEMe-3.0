@@ -1,0 +1,341 @@
+/* Profile page styles */
+.profile-container {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 2rem;
+}
+
+.profile-section {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.profile-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* User Info Section */
+.user-details {
+    padding: 1rem 0;
+}
+
+.username {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.email {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.level-info {
+    margin: 1.5rem 0;
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #808080;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.level-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.delete-account-btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-account-btn:hover {
+    background-color: #c82333;
+}
+
+/* Languages Section */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.language-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.language-header {
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.progress-text {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.language-info {
+    padding: 15px;
+}
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.2);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.progress-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.progress-stats .stat {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.last-attempt {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 10px;
+    text-align: right;
+    font-style: italic;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin: 0;
+    color: #666;
+    font-size: 1em;
+}
+
+.stat-card .stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Section Headers */
+.profile-section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Delete Account Section */
+.delete-account-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.delete-account-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.delete-account-btn:hover {
+    background-color: #c82333;
+}
+
+.error-box {
+    background-color: #fff5f5;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.error-message {
+    color: #dc3545;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Language Progress Section */
+.language-progress {
+    margin-top: 2rem;
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.language-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.language-card:hover {
+    transform: translateY(-2px);
+}
+
+.language-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.progress-info {
+    margin-top: 1rem;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    opacity: 0.8;
+}
+
+.progress-details {
+    font-size: 0.9rem;
+    color: #495057;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.proficiency-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.proficiency-badge.beginner {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.proficiency-badge.intermediate {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.proficiency-badge.professional {
+    background: #fce4ec;
+    color: #c2185b;
+}
+
+.last-activity {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+.no-progress {
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Animation for language cards */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.language-card {
+    animation: fadeIn 0.3s ease-out forwards;
+}

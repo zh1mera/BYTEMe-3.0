@@ -1,0 +1,29 @@
+1.What is the difference between abstract classes and interfaces in Java (post-Java 8)?
+Answer: Interfaces can have default and static methods; abstract classes can have constructors and state.
+
+2.What are the main principles of garbage collection in Java?
+Answer: Objects without references are collected; GC uses generational collection.
+
+3.Explain the volatile keyword in Java.
+Answer: It ensures visibility of changes to variables across threads.
+
+4.How do you prevent a class from being subclassed in Java?
+Answer: Declare the class final.
+
+5.What is the difference between fail-fast and fail-safe iterators?
+Answer: Fail-fast throws ConcurrentModificationException; fail-safe works on a clone.
+
+6.What is the significance of the equals() and hashCode() contract?
+Answer: Equal objects must have the same hashCode to function correctly in hash-based collections.
+
+7.What are soft, weak, and phantom references?
+Answer: They allow memory-sensitive references that behave differently with garbage collection.
+
+8.What is the purpose of the transient keyword?
+Answer: It marks a field not to be serialized.
+
+9.How is thread safety achieved in Java collections?
+Answer: By using synchronized collections or concurrent classes like ConcurrentHashMap.
+
+10.What is the difference between composition and aggregation in Java?
+Answer: Composition implies ownership; aggregation is a weaker association.

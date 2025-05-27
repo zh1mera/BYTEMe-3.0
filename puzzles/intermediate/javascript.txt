@@ -1,0 +1,39 @@
+Level 1:
+Q: What is the output of typeof null?
+A: "object"
+
+Level 2:
+Q: What does === check?
+A: Value and type
+
+Level 3:
+Q: const obj = {}; obj.prop = 5; is:
+A: Valid
+
+Level 4:
+Q: Which method converts JSON string to object?
+A: JSON.parse()
+
+Level 5:
+Q: What is a closure?
+A: A function remembering its scope
+
+Level 6:
+Q: What is the result of [] + []?
+A: ""
+
+Level 7:
+Q: What does Array.prototype.map() do?
+A: Transforms and returns new array
+
+Level 8:
+Q: What is hoisting?
+A: Moving functions and vars to the top
+
+Level 9:
+Q: What is the result of Number('abc')?
+A: NaN
+
+Level 10:
+Q: Arrow functions:
+A: Use parent scope’s this

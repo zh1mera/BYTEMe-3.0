@@ -1,0 +1,137 @@
+/* Programming Languages specific styles */
+.languages-container {
+    margin-top: 80px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.language-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+}
+
+.language-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.language-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.language-card h2 {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.language-card p {
+    margin-bottom: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    flex-grow: 1;
+}
+
+.start-learning {
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-learning:hover {
+    background-color: #333;
+}
+
+.return-btn {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.return-btn:hover {
+    background-color: #555;
+}
+
+.level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.level-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+}
+
+.level-header {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.level-content {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .language-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .language-card {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

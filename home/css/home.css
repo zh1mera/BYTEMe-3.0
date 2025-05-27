@@ -1,0 +1,308 @@
+/* Home page specific styles */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #000;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-welcome {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-welcome:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-btn {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.nav-btn.active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn.logout {
+    background-color: rgba(255, 68, 68, 0.1);
+    color: #ff4444;
+}
+
+.nav-btn.logout:hover {
+    background-color: rgba(255, 68, 68, 0.2);
+}
+
+.difficulty-badge {
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+.logout-btn {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-btn {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+.nav-btn.logout {
+    background-color: rgba(255, 68, 68, 0.1);
+    color: #ff4444;
+}
+
+.nav-btn.logout:hover {
+    background-color: rgba(255, 68, 68, 0.2);
+}
+
+.home-container {
+    flex: 1;
+    margin-top: 100px;
+    padding: 2rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 10rem;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 10rem;
+    padding: 5rem;
+}
+
+@media (max-width: 1024px) {
+    .quick-actions {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.action-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 250px;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+}
+
+.action-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.action-card p {
+    margin-bottom: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    flex-grow: 1;
+}
+
+.action-card .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.action-card .button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.progress-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    height: 100%;
+}
+
+.progress-user-info {
+    text-align: left;
+}
+
+.progress-user-info .welcome {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.progress-user-info .difficulty {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.progress-user-info .description {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.progress-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 2rem;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    width: 100%;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}

@@ -1,0 +1,30 @@
+Level 1:
+Q: What is the output of print(2 + 3)?
+A: 5
+Level 2:
+Q: What data type is this: "Hello World"?
+A: str (string)
+Level 3:
+Q: How do you create a list in Python?
+A: With square brackets: my_list = [1, 2, 3]
+Level 4:
+Q: What does this return: len("Python")?
+A: 6
+Level 5:
+Q: What keyword is used for loops that repeat while a condition is true?
+A: while
+Level 6:
+Q: How do you define a function in Python?
+A: def my_function():
+Level 7:
+Q: What's the output of 10 // 3?
+A: 3 (integer division)
+Level 8:
+Q: What is the correct way to handle exceptions in Python?
+A: try: ... except:
+Level 9:
+Q: What does this print: print("2" * 3)?
+A: 222
+Level 10:
+Q: What is the difference between a list and a tuple?
+A: A list is mutable; a tuple is immutable.

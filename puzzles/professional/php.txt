@@ -1,0 +1,29 @@
+1.What is encapsulation in PHP OOP?
+Answer: Grouping data and functions into a single unit (class) and restricting access
+
+2.What keyword is used to inherit a class?
+Answer: extends
+
+3.How do you prevent SQL injection in PHP?
+Answer: By using prepared statements
+
+4.What does PDO stand for?
+Answer: PHP Data Objects
+
+5.How do you start a session in PHP?
+Answer: session_start()
+
+6.What is the use of the final keyword in a class or method?
+Answer: It prevents the class or method from being extended or overridden
+
+7.What is the difference between public, private, and protected?
+Answer: public: accessible everywhere, private: only within the class, protected: within the class and subclasses
+
+8.How do you connect to a MySQL database using PDO?
+Answer: new PDO("mysql:host=hostname;dbname=database", "username", "password")
+
+9.What is a trait in PHP?
+Answer: A reusable set of methods that can be included in multiple classes
+
+10.What is the __construct method used for?
+Answer: It is the constructor method automatically called when an object is created

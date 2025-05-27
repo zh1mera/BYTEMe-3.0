@@ -1,0 +1,40 @@
+﻿{
+  "name": "byteme-desktop",
+  "version": "1.0.0",
+  "description": "BYTEMe Desktop Application",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsc && electron .",
+    "dev": "cross-env NODE_ENV=development npm start",
+    "build": "tsc && electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "build": {
+    "appId": "com.byteme.desktop",
+    "productName": "BYTEMe",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "dist/**/*",
+      "app/**/*"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^16.11.7",
+    "cross-env": "^7.0.3",
+    "electron": "^24.3.0",
+    "electron-builder": "^24.3.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0"
+  }
+}

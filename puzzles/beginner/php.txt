@@ -1,0 +1,39 @@
+Level 1:
+Q: What does PHP stand for?
+A: Hypertext Preprocessor
+
+Level 2:
+Q: What symbol is used to declare variables in PHP?
+A: Dollar sign ($)
+
+Level 3:
+Q: Which function is used to output text in PHP?
+A: echo
+
+Level 4:
+Q: What is the default file extension for PHP files?
+A: .php
+
+Level 5:
+Q: How do you write a comment in PHP?
+A: // or #
+
+Level 6:
+Q: Which tag is used to open PHP code?
+A: <?php
+
+Level 7:
+Q: What is the result of 5 + "5" in PHP?
+A: 10
+
+Level 8:
+Q: How do you create an array in PHP?
+A: Using array()
+
+Level 9:
+Q: What is the function to get the length of a string?
+A: strlen()
+
+Level 10:
+Q: How do you check if a variable is set?
+A: isset()

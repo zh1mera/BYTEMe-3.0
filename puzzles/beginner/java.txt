@@ -1,0 +1,39 @@
+Level 1:
+Q: What is the correct syntax to print something in Java?
+A: System.out.println("Hello");
+
+Level 2:
+Q: What is the default value of an int in Java?
+A: 0
+
+Level 3:
+Q: How do you declare a variable that cannot change?
+A: Use final, e.g., final int x = 5;
+
+Level 4:
+Q: Which keyword is used to inherit a class?
+A: extends
+
+Level 5:
+Q: What does a constructor do in Java?
+A: Initializes an object
+
+Level 6:
+Q: What is the output of: System.out.println(5 + "5");
+A: 55 (String concatenation)
+
+Level 7:
+Q: How do you create an array of 5 integers?
+A: int[] arr = new int[5];
+
+Level 8:
+Q: What is the purpose of the static keyword?
+A: It allows a method or variable to belong to the class, not instances.
+
+Level 9:
+Q: What is the difference between == and .equals()?
+A: == compares references; .equals() compares values.
+
+Level 10:
+Q: What is an interface in Java?
+A: A contract that a class can implement with abstract methods.

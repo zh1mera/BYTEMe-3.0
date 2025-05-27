@@ -1,0 +1,29 @@
+1.What is the event loop in JavaScript?
+Answer: A mechanism that handles async callbacks by placing them in the callback queue.
+
+2.What are closures and why are they useful?
+Answer: Functions that retain access to their lexical scope even after the outer function has returned.
+
+3.What is the difference between var, let, and const?
+Answer: var is function-scoped; let and const are block-scoped; const cannot be reassigned.
+
+4.What is hoisting in JavaScript?
+Answer: Variable and function declarations are moved to the top of their scope before code execution.
+
+5.What is a promise and what are its states?
+Answer: An object representing the eventual result of an async operation; states: pending, fulfilled, rejected.
+
+6.What does "use strict" do?
+Answer: Enforces stricter parsing and error handling of JavaScript code.
+
+7.What are the differences between == and ===?
+Answer: == checks value with type coercion; === checks value and type strictly.
+
+8.What is the purpose of the this keyword?
+Answer: Refers to the context in which a function is executed.
+
+9.What are modules in JavaScript (ES6)?
+Answer: Modules are reusable code units exported and imported using import/export statements.
+
+10.What is the difference between call(), apply(), and bind()?
+Answer: call and apply invoke functions with a given context; bind returns a new function with bound context.

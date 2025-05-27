@@ -1,0 +1,30 @@
+
+1.What is a Python descriptor?
+Answer: An object with get, set, and delete methods that manages attribute access.
+
+2.How does the GIL affect multi-threaded Python programs?
+Answer: It prevents multiple native threads from executing Python bytecodes at once.
+
+3.What is the use of metaclasses in Python?
+Answer: Metaclasses define how classes behave; they control class creation.
+
+4.What is the difference between @staticmethod and @classmethod?
+Answer: @staticmethod doesn’t take self or cls; @classmethod takes cls as the first argument.
+
+5.How is memory managed in Python?
+Answer: Through reference counting and garbage collection for cyclic references.
+
+6.What does the yield keyword do?
+Answer: It returns a generator and pauses function state until resumed.
+
+7.Explain the difference between is and == in Python.
+Answer: is checks identity; == checks value equality.
+
+8.What is monkey patching in Python?
+Answer: Modifying or extending code at runtime without altering the original source.
+
+9.How do you enforce immutability in Python classes?
+Answer: Use slots and make attributes read-only through property decorators.
+
+10.What is the difference between deep copy and shallow copy in Python?
+Answer: A shallow copy copies references to objects, while a deep copy recursively copies all objects.

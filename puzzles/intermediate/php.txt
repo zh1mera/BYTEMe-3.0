@@ -1,0 +1,41 @@
+Level 1:
+Q: What does the === operator check in PHP?
+A: Value and type
+
+Level 2:
+Q: What is the correct way to start a session in PHP?
+A: session_start()
+
+Level 3:
+Q: Which superglobal is used to collect form data sent with GET?
+A: $_GET
+
+Level 4:
+Q: How can you prevent SQL injection in PHP?
+A: Using prepared statements
+
+Level 5:
+Q: What does the empty() function check for?
+A: If a variable has no value or is false
+
+Level 6:
+Q: How do you include a PHP file only once?
+A: include_once 'file.php';
+
+Level 7:
+Q: Which array function removes the last element from an array?
+A: array_pop()
+
+Level 8:
+Q: What is the output of count([1, 2, [3, 4]]) in PHP?
+A: 3
+
+Level 9:
+Q: How can you define a constant in PHP?
+A: define("PI", 3.14);
+A: const PI = 3.14;
+
+Level 10:
+Q: Which error level represents a fatal run-time error?
+A: E_ERROR
+

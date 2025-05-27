@@ -1,0 +1,299 @@
+/* Main styles for BYTEMe application */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.welcome-text {
+    color: #000000;
+    font-size: 48px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Login and Signup Form Styles */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-title {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 32px;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid #ef9a9a;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.password-container {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.show-password:hover {
+    opacity: 1;
+}
+
+.back-link {
+    color: #000000;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+/* Difficulty Selection Styles */
+.difficulty-container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.difficulty-title {
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.difficulty-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.difficulty-button {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.difficulty-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.return-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.return-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Admin Dashboard Styles */
+.admin-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.admin-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.admin-nav .button {
+    padding: 0.5rem 1rem;
+}
+
+.users-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.users-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.users-table th {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+}
+
+.role-form {
+    margin: 0;
+}
+
+.role-form select {
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: white;
+}
+
+.delete-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+.success-message {
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    padding: 1rem;
+    background-color: #ff4444;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}

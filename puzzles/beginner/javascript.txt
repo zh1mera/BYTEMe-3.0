@@ -1,0 +1,40 @@
+Level 1:
+Q: How do you declare a variable in JavaScript?
+A: let x = 5;
+
+Level 2:
+Q: What does typeof "hello" return?
+A: string
+
+Level 3:
+Q: What is the result of 2 + "2"?
+A: "22" (string)
+
+Level 4:
+Q: What keyword is used to create a constant?
+A: const
+
+Level 5:
+Q: How do you create a function?
+A: function greet() {}
+
+Level 6:
+Q: What is the output of: console.log(typeof null);
+A: object
+
+Level 7:
+Q: What is a callback function?
+A: A function passed as an argument to another function
+
+Level 8:
+Q: What is the difference between == and ===?
+A: === checks both value and type; == only checks value
+
+Level 9:
+Q: What is an array in JavaScript?
+A: A list-like object: let arr = [1, 2, 3];
+
+Level 10:
+Q: What is the use of promises in JavaScript?
+A: To handle asynchronous operations
+

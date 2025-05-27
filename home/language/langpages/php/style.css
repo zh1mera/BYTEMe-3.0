@@ -1,0 +1,123 @@
+.php-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.levels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.level-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+}
+
+.level-card.unlocked:hover {
+    transform: translateY(-5px);
+}
+
+.level-number {
+    margin-bottom: 15px;
+}
+
+.level-number h2 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.start-level {
+    width: 120px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 25px;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.start-level:hover {
+    background: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Adjust header styles */
+.php-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Animations for result feedback */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.result-container {
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.result-container.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    display: block;
+    border-left: 4px solid #2e7d32;
+    box-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);
+}
+
+.result-container.error {
+    background: #ffebee;
+    color: #c62828;
+    display: block;
+    border-left: 4px solid #c62828;
+    box-shadow: 0 2px 4px rgba(198, 40, 40, 0.1);
+}
+
+/* Disabled state styles */
+textarea:disabled,
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
