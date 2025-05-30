@@ -13,6 +13,7 @@ session_start();
 <body>
     <div class="form-container">
         <h1 class="form-title">Sign Up</h1>
+        <?php if (!isset($_SESSION['verification_pending'])): ?>
         <form action="signup_process.php" method="POST">
             <div class="form-group">
                 <label for="username">Username</label>
@@ -21,7 +22,8 @@ session_start();
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
-            </div>            <div class="form-group">
+            </div>
+            <div class="form-group">
                 <label for="password">Password</label>
                 <div class="password-container">
                     <input type="password" id="password" name="password" required>
@@ -35,8 +37,18 @@ session_start();
                     <button type="button" class="show-password" onclick="togglePassword('confirm_password')">👁️</button>
                 </div>
             </div>
-            <button type="submit" class="button">SIGN UP</button>
+            <button type="submit" name="step" value="send_verification" class="button">GET VERIFICATION CODE</button>
         </form>
+        <?php else: ?>
+        <p>A verification code has been sent to your email. Please check your inbox and enter the code below.</p>
+        <form action="signup_process.php" method="POST">
+            <div class="form-group">
+                <label for="verification_code">Verification Code</label>
+                <input type="text" id="verification_code" name="verification_code" required>
+            </div>
+            <button type="submit" name="step" value="verify_code" class="button">VERIFY & COMPLETE SIGNUP</button>
+        </form>
+        <?php endif; ?>
         <a href="welcome.php" class="back-link">← Back to Welcome Page</a>
     </div>
 </body>
